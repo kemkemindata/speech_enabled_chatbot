@@ -6,8 +6,11 @@ The chatbot is capable of recognizing patterns and responding with predefined me
 ## Table of Contents
 
 Features
+
 Installation
-Usage
+
+RUN
+
 Technologies Used
 
 
@@ -41,56 +44,51 @@ source venv/bin/activate    # For Linux/MacOS
 venv\Scripts\activate       # For Windows
 
 **Install the required dependencies:**
+
 pip install -r requirements.txt
 
 Ensure you have all necessary libraries installed:
 
-Streamlit: For the web interface.
-SpeechRecognition: For speech-to-text functionality.
-NLTK: For the chatbot logic using pattern matching.
-Pyttsx3: (Optional) For future text-to-speech features.
+
+-Streamlit: For the web interface.
+
+-SpeechRecognition: For speech-to-text functionality.
+
+-NLTK: For the chatbot logic using pattern matching.
+
+-Pyttsx3:  For future text-to-speech features.
+
+
 Download NLTK resources:
 
-Inside the app.py file, the necessary NLTK package (punkt) is downloaded with the following command:
+Inside the speech-chatbot.py, the necessary NLTK package (punkt) is downloaded with the following command:
 
-python
-Copy code
 nltk.download("punkt")
-📄 Usage
+
+
+## RUN
 To run the app:
 
 Run the Streamlit app:
 
-bash
-Copy code
 streamlit run app.py
 Select input method:
 
-Text Input: Type your question into the text box and click "Submit".
-Speech Input: Ensure your microphone is connected, click "Start Recording", and speak your question.
-Chatbot Interaction:
+-Text Input: Type your question into the text box and click "Submit".
 
-The chatbot will provide responses based on the predefined rules set in the code.
-Example interactions:
-User: What is your name?
-Chatbot: My name is ChatBot. Nice to meet you!
-User: Tell me a joke.
-Chatbot: Why don't scientists trust atoms? Because they make up everything!
-🧰 Technologies Used
-Python: The programming language used to build the app.
-Streamlit: For creating the interactive web interface.
-SpeechRecognition: For converting speech to text.
-NLTK: For handling the chatbot logic.
-Pyttsx3: (Optional) For adding text-to-speech functionality in future updates.
-🤝 Contributing
-We welcome contributions to improve the project! Feel free to fork the repository and submit a pull request.
+-Speech Input: Ensure your microphone is connected, click "Start Recording", and speak your question.
 
-Fork the project
-Create a new branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some amazing features')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a pull request
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-📧 Contact
+## Technologies Used
+
+-Python: The programming language used to build the app.
+
+-Streamlit: For creating the interactive web interface.
+
+-SpeechRecognition: For converting speech to text.
+
+-NLTK: For handling the chatbot logic.
+
+-Pyttsx3: For adding text-to-speech functionality in future updates.
+
+
